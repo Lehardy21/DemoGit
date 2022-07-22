@@ -3,12 +3,14 @@ package model;
 public class Personne {
 
 	private String nom;
+private int age;
 
 	
 	
-	public Personne(String nom) {
+	public Personne(String nom, int age) {
 		super();
 		this.nom = nom;
+		this.age=age;
 	}
 
 	public String getNom() {
@@ -23,7 +25,15 @@ public class Personne {
 
 	@Override
 	public String toString() {
-		return "Personne [nom=" + nom + "]";
+		return "Personne [nom=" + nom + ", age=" + age + "]";
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
 	} 
 	
 	
